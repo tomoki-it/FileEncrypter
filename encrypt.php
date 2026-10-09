@@ -1,7 +1,5 @@
 <?php
 
-//
-
 $tokenFile = __DIR__ . '/resource/password_token';
 $input = __DIR__ . '/input/';
 $output = __DIR__ . '/output/';
@@ -36,7 +34,7 @@ $key = hash('sha256', $token, true);
 
 $data = file_get_contents($input.$inputFile);
 
-$ciphertext = openssl_encrypt($data, $cipher, $key, OPENSSL_RAW_DATA, $iv, $tag, "", 16);
+$ciphertext = openssl_encrypt($data, $cipher, $key, OPENSSL_RAW_DATA, $iv);
 
 if ($ciphertext === false) {
     die("Error: Encryption failed.\n");
