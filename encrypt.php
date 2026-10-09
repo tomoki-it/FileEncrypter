@@ -1,5 +1,7 @@
 <?php
 
+//
+
 $tokenFile = __DIR__ . '/resource/password_token';
 $input = __DIR__ . '/input/';
 $output = __DIR__ . '/output/';
