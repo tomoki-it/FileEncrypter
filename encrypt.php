@@ -9,7 +9,7 @@ if(!file_exists($output)) {
 }
 
 if(!file_exists($input)) {
-    mkdir($output);
+    mkdir($input);
 }
 
 if (!file_exists($tokenFile)) {
