@@ -3,12 +3,15 @@
 $tokenFile = __DIR__ . '/resource/password_token';
 $output = __DIR__ . '/output/';
 $input = __DIR__ . '/input/';
+
 if(!file_exists($output)) {
     mkdir($output);
 }
+
 if(!file_exists($input)) {
     mkdir($output);
 }
+
 if (!file_exists($tokenFile)) {
     die("Error: password_token file not found.\n");
 }
